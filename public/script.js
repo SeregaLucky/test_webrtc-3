@@ -1,6 +1,6 @@
 
 // const socket = io('http://localhost:3003');
-const socket = io('https://fierce-tundra-83230-a449f2e56dd2.herokuapp.com/');
+const socket = io('https://testwebrtc3-20d5423d25c9.herokuapp.com/');
 
 let localStream;
 let pc;

@@ -52,6 +52,11 @@ function createPeerConnection() {
 
     pc.onconnectionstatechange = () => {
         console.log('Изменение состояния соединения: ', pc.connectionState);
+
+        const state = pc.connectionState;
+        if (state === 'disconnected' || state === 'failed') {
+            restartIce()
+        }
     };
 }
 
